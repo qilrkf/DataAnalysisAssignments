@@ -66,10 +66,11 @@ The dataset contains information about:
 ---
 
 ## Key Insights
-- Profitability varies significantly across product categories  
-- Discounts have a strong impact on profit margins  
-- Some segments generate higher profit despite lower sales volume  
-- Regional differences influence overall performance  
+- Profit and sales distributions are highly skewed, with extreme outliers on both profit and loss sides.
+- Discount level is one of the most important drivers of profitability.
+- High-loss transactions are associated with significantly higher discounts than high-profit transactions.
+- Product category differences among high-profit orders were not statistically significant in the ANOVA test.
+- Machine learning models showed strong predictive performance for both profit prediction and profitability classification. 
 
 ---
 
@@ -87,10 +88,11 @@ FinalProject/
 ---
 
 ## Results
-- Identified key factors influencing profitability  
-- Built predictive models for profit estimation  
-- Developed classification model for profitability prediction  
-- Generated visual insights for business analysis  
+- Welch two-sample t-test showed a statistically significant difference in discount rates between high-profit and high-loss orders.
+- One-way ANOVA did not show statistically significant sales differences across product categories among high-profit orders.
+- The tuned Random Forest regression model achieved R² = 0.8607 and RMSE = 30.94 on the test set.
+- The Random Forest classification model achieved Accuracy = 0.953 and ROC-AUC ≈ 0.988.
+- The analysis suggests that discount control is the most actionable direction for improving profitability. 
 
 ---
 
